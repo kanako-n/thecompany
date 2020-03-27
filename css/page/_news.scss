@@ -1,0 +1,91 @@
+@import "../mixin/_mixin.scss";
+
+#news {
+
+    padding-bottom: 29px;
+
+    h2 {
+        @include title;
+    }
+
+    dl div {
+        color: #333333;
+        font-size: 16px;
+        margin: 22.5px auto 0;
+        width: 838px;
+        padding-bottom: 21.5px;
+        border-bottom: 1px solid #707070;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        dt {
+            float: left;
+        }
+
+        @media (max-width: 900px) {
+
+            width: 90%;
+
+            .title {
+                clear: both;
+            }
+            
+        }
+
+
+        
+        @mixin label ($color) {
+            float: left;
+            background-color:$color;
+            color: #FFFFFF;
+            padding: 4.42px 18px;
+            border-radius: 6px;
+            margin: 0 30px;
+            
+        }
+        .label1 a {
+            @include label(#666666);
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        .label2 a {
+            @include label(#3F51B5);
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        .label3 a {
+            @include label(#E81919);
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        .title a {
+            color: #333333;
+            
+        }
+    }
+
+    .more {
+        text-align: center;
+    
+
+        a {
+            color: #E81919;
+            font-size: 16px;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        i {
+            margin-left: 10.5px;
+        }
+    }
+
+
+
+}

@@ -1,0 +1,31 @@
+@mixin title {
+    margin-top: 68px;
+    margin-bottom: 115px;
+    font-size: 60px;
+    color: #333333;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -44.45px;
+        display: inline-block;
+        width: 76px;
+        height: 5px;
+        background-color: #3F51B5;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+
+@mixin placeholder  {
+    color: #CCCCCC;
+    font-size: 16px;
+    padding-left: 16px;
+}

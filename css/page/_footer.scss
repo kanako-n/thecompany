@@ -1,0 +1,80 @@
+footer {
+    background-image: linear-gradient(#666666, #333333);
+    color: #FFFFFF;
+    padding: 74px 20px 31px 20px;
+    position: relative;
+
+    .campany {
+        width: 200px;
+        height: 124px;
+
+    }
+
+    .footer-main {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+
+    h3 {
+        margin: 0;
+        width: 200px;
+        height: 39px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 344px;
+        height: 21px;
+        text-align: center;
+        padding-left: 32px;
+
+        a {
+            color: #FFFFFF;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        
+    }
+
+    .icon {
+        width: 122px;
+        height: 30px;
+        padding: 10px 39px 0;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .small {
+        margin-top: 91px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+
+    @media (max-width: 850px) {
+        .footer-main {
+            display: block;
+            text-align: center;
+        }
+
+        h3, ul, .icon {
+            margin: 10px auto 20px;
+        }
+
+        .small {
+            margin-top: 40px;
+        }
+
+        
+    }
+
+}

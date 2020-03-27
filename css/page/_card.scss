@@ -1,0 +1,34 @@
+@import "../mixin/_mixin.scss";
+
+#card {
+    background-color: #EFEFEF;
+    padding-bottom: 131px;
+
+    h2 {
+        @include title;
+    }
+
+    .items {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(342px,1fr));
+        color: #6F7579;
+        margin: 68.57px auto 165px;
+        max-width: 1106px;
+
+        .item {
+            background-color: #FFFFFF;
+            max-width: 342px;
+            height: 355px;
+            padding: 16px;
+            margin: 0 auto;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        h2 {
+            font-size: 60px/3*2;
+        }
+    }
+}

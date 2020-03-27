@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "page/header";
+@import "page/card";
+@import "page/news";
+@import "page/price";
+@import "page/access";
+@import "page/contact";
+@import "page/footer";
+@import "page/faq";
+
+// 共通部分
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Lato', 'Noto Sans JP', sans-serif;
+    color: #333333;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+
+.floating {
+    position: fixed;
+    right: 19px;
+    bottom: 14px;
+    display: none;
+    }
+    .floating a {
+    display: block;
+    padding: 8px;
+    opacity: 0.6;
+    }
+    .floating a:hover {
+    opacity: 1;
+    }
